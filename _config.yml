@@ -3,3 +3,5 @@ server:      false
 
 source:      .
 destination: ./_site
+
+paginate:    4
