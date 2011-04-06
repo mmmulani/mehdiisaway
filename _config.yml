@@ -5,3 +5,5 @@ source:      .
 destination: ./_site
 
 paginate:    4
+
+permalink:   /away/:year/:month/:day/:title
