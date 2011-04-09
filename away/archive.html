@@ -1,0 +1,22 @@
+---
+layout: default
+title: archive
+---
+{% assign year = '' %}
+{% assign month = '' %}
+{% for post in site.posts %}
+  {% capture tmpYear %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% capture tmpMonth %}{{ post.date | date: "%B" }}{% endcapture %}
+  {% if year != tmpYear %}
+    {% assign year = tmpYear %}
+    {% assign month = tmpMonth %}
+    <h1>{{ year }}</h1>
+    <h2>{{ month }}</h2>
+    New year and month. {{ post.date }} <br>
+  {% elsif month != tmpMonth %}
+    {% assign month = tmpMonth %}
+    <h2>{{ month }}</h2>
+    New month. {{ post.date }} <br>
+  {% endif %}
+  {{ post.date }} <br>
+{% endfor %}
