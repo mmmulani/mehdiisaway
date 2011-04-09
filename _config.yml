@@ -7,6 +7,9 @@ destination: ./_site
 paginate:    4
 
 permalink:   /away/:year/:month/:day/:title
+# Configuration option that only takes effect in special version of pagination.
+# Represents the subdirectory that all content will be placed under.
+# In the case of pagination, it should create content at away/page2, etc.
 subdir:      away/
 
 exclude:     README
