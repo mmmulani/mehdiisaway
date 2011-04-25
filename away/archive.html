@@ -12,11 +12,9 @@ title: archive
     {% assign month = tmpMonth %}
     <h1>{{ year }}</h1>
     <h2>{{ month }}</h2>
-    New year and month. {{ post.date }} <br>
   {% elsif month != tmpMonth %}
     {% assign month = tmpMonth %}
     <h2>{{ month }}</h2>
-    New month. {{ post.date }} <br>
   {% endif %}
-  {{ post.date }} <br>
+  {{ post.date | date: "%d" }} - <a href="{{ post.url }}">{{ post.title }}</a> <br>
 {% endfor %}
