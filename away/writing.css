@@ -2,3 +2,7 @@ img {
   margin: 0 auto;
   display: block;
 }
+
+.post-footer {
+  text-align: right;
+}
