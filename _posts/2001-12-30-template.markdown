@@ -1,0 +1,7 @@
+---
+layout: post
+title: Title
+---
+First paragraph.
+
+![alt text](/away/imgs/2011/##/##/P10#####.jpg)
