@@ -12,4 +12,4 @@ permalink:   /away/:year/:month/:day/:title
 # In the case of pagination, it should create content at away/page2, etc.
 subdir:      away/
 
-exclude:     README, _posts/2001-12-30-template.markdown
+exclude:     README
