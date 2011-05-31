@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-infinitescroll
 title: home page
 ---
 
@@ -8,19 +8,14 @@ title: home page
   {{ post.date | date: "%A, %B %d, %Y" }}
   <br />
   {{ post.content }}
+
+  <hr />
 {% endfor %}
 
 {% if paginator.next_page or paginator.previous_page %}
 <div class="paging">
   {% if paginator.next_page %}
     <a href="page{{ paginator.next_page }}">Older posts</a>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      | <a href="/away/">Newer posts</a>
-    {% else %}
-      | <a href="page{{ paginator.next_page }}">Newer posts</a>
-    {% endif %}
   {% endif %}
 </div>
 {% endif paginator.next_page or paginator.previous_page %}
