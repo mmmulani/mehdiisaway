@@ -6,3 +6,9 @@ img {
 .post-footer {
   text-align: right;
 }
+
+hr {
+  height: 3px;
+  color: black;
+  background-color: black;
+}
