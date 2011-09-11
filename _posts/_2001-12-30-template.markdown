@@ -5,3 +5,6 @@ title: Title
 First paragraph.
 
 ![alt text](/away/imgs/2011/##/##/P10#####.jpg)
+
+This was generated with ":Img 815 Example text"
+![Example text](/away/imgs/2011/07/03/P1000815.jpg)
